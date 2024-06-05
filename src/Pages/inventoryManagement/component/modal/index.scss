@@ -1,0 +1,85 @@
+.inventory-management{
+  &-modal_confirm{
+    width: 480px;
+    height: fit-content;
+    padding:24px;
+    .confirm-popup__body{
+      height: 132px !important;
+      margin-bottom: 32px;
+    }
+    .confirm-popup__dismiss{
+      height: 32px !important;
+      padding: 0 10px;
+    }
+    .confirm-popup__save{
+      height: 32px !important;
+      padding: 0 10px;
+    }
+  }
+  &-modal_confirm-cancel{
+    width: 480px;
+    height: fit-content;
+    padding:24px;
+    .confirm-popup__body{
+      height: 92px !important;
+      margin-bottom: 32px;
+    }
+    .confirm-popup__dismiss{
+      height: 32px !important;
+      padding: 0 10px;
+    }
+    .confirm-popup__save{
+      height: 32px !important;
+      padding: 0 10px;
+    }
+  }
+  &-modal_dismiss{
+    button{
+      width: 110px !important;
+      font-size: 14px !important;
+    }
+
+  }
+  &_action-button{
+    margin-top: 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    .confirm-popup__dismiss{
+      width: fit-content !important;
+      border: unset;
+      height: 32px !important;
+      color: #1A94FF !important;
+      &:hover{
+        color: #1A94FF !important;
+      }
+    }
+    .confirm-popup__save{
+      height: 32px !important;
+      width:fit-content !important;
+      padding: 0 16px !important;
+
+    }
+  }
+  &-modal_confirm-import{
+    width: 480px;
+    height: fit-content;
+    .confirm-popup__body{
+      height: 112px !important;
+      margin-bottom: 32px;
+    }
+      @media screen and (max-width: 1440px){
+        margin: 14rem auto 0 auto;
+      }
+    .inventory-management_action-import-confirm{
+
+      .confirm-popup__dismiss{
+        padding:0;
+      }
+      .confirm-popup__save{
+        padding:0;
+
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.confirm-winner {
+  background: #110A14;
+  margin: 11rem auto 0 auto;
+
+  line-height: 140%;
+
+  //width: 24.75rem;
+  //max-height: 13rem;
+  border-radius: var(--border-radius);
+  @media screen and (max-width: 1440px){
+    margin: 6rem auto 0 auto;
+  }
+  @media screen and (max-width: 1366px){
+    margin: 2rem auto 0 auto;
+  }
+  &__body {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+  }
+  &__group-btn {
+    margin-top: 4.6rem;
+    text-align: center;
+    button {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 140%;
+
+      cursor: pointer;
+      padding: 8px 24px;
+      border-radius: 60px;
+      border: 1px;
+      height: 44px !important;
+
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 140%;
+    }
+  }
+  &__dismiss {
+    background: linear-gradient(181.58deg, #E8FC04 -14.34%, #FF4D00 115.55%);
+    margin-right: .75rem;
+    color: var(--white-color);
+    &:hover {
+      //border: 1px solid var(--color-package-up2022-7);
+    }
+  }
+  &__save {
+    color: var(--white-color);
+    background: linear-gradient(338.02deg, #0DA64F 22.27%, #DCFF00 119.14%);
+    &:hover {
+      background: var(--color-hover-package-up2022-7);
+      color: var(--white-color);
+    }
+  }
+}
+.mini-game-winner-detail{
+  width: 500px;
+  height: 551px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding: 32px 24px;
+  .confirm-winner__dismiss {
+    background: linear-gradient(181.58deg, #E8FC04 -14.34%, #FF4D00 115.55%) !important;
+    &:hover {
+      //border: 1px solid var(--color-package-up2022-7);
+    }
+  }
+  .confirm-winner__save {
+    background: linear-gradient(338.02deg, #0DA64F 22.27%, #DCFF00 119.14%) !important;
+    &:hover {
+      //background: var(--color-hover-package-up2022-7);
+    }
+  }
+}
+
+.mini-game-winner-list-many{
+  width: 748px;
+  height: 619px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding: 32px 24px;
+  .confirm-winner__dismiss {
+    background: linear-gradient(181.58deg, #E8FC04 -14.34%, #FF4D00 115.55%) !important;
+    &:hover {
+      //border: 1px solid var(--color-package-up2022-7);
+    }
+  }
+  .confirm-winner__save {
+    background: linear-gradient(338.02deg, #0DA64F 22.27%, #DCFF00 119.14%) !important;
+    &:hover {
+      //background: var(--color-hover-package-up2022-7);
+    }
+  }
+  @media screen and (max-width: 1440px){
+    margin: 4rem auto 0 auto;
+  }
+  @media screen and (max-width: 1366px){
+    margin: 0rem auto 0 auto;
+  }
+}

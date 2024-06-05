@@ -1,0 +1,360 @@
+@import "src/Component/mixin";
+
+.table__consignment {
+    box-shadow: none !important;
+    .MuiTableHead-root {
+        padding: 0;
+
+        .MuiTableRow-head {
+            background: #EFF3FB;
+            height: 44px;
+
+            .MuiTableCell-root {
+                padding: 0px !important;
+                padding-left: 13px !important;
+                border-bottom: 1px solid #E2EAF8;
+            }
+
+            .MuiTableCell-head {
+                font-weight: 600;
+            }
+
+            .table_checkbox {
+                width: 74px;
+
+                input {
+                    cursor: pointer;
+                }
+            }
+
+            .table_consignment {
+                width: 21.25rem;
+               
+            }
+
+            .table_phone {
+                width: 7.5rem;
+            }
+
+            .table_address {
+                width: 46.25rem;
+            }
+
+            .table_status {
+                width: 15rem;
+                text-align: center;
+            }
+            .table_setting {
+                text-align: right;
+            }
+
+            .dropDown_main {
+
+                &-content {
+                    display: flex;
+                }
+
+                &-show {
+                    width: 88px;
+                    height: 28px;
+                    background: #2BB8A9;
+                }
+            }
+        }
+
+    }
+
+    .MuiTableBody-root {
+
+        .MuiTableCell-root {
+            padding: 12.49px !important;
+            border-bottom: 1px solid #E2EAF8;
+        }
+
+        .table_body {
+            height: 66px;
+
+            .table_checkbox {
+                width: 74px;
+
+                // input {
+                //     cursor: pointer;
+                // }
+            }
+
+            // .table_consignment_span {
+            //     display: -webkit-box !important;
+            //     max-width: 100%;
+            //     -webkit-line-clamp: 2;
+            //     -webkit-box-orient: vertical;
+            //     overflow: hidden;
+            //     text-overflow: ellipsis;
+            // }
+
+            .table_consignment {
+                width: 21.25rem;
+                 div{
+                    display: -webkit-box !important;
+                    max-width: 100%;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .table_default_address {
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 140%;
+                    color: #1A94FF;
+                    width: fit-content;
+                    height: 18px;
+                    background: #EBF5FF;
+                    border-radius: 4px;
+                    padding: 0px 8px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+
+            .table_phone {
+                width: 7.5rem;
+            }
+
+            .table_address {
+                width: 46.25rem;
+                div{
+                    display: -webkit-box !important;
+                    max-width: 100%;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .table_status {
+                width: 15rem;
+                text-align: center;
+            }
+
+            .table_setting {
+                text-align: center;
+                padding: 0 !important;
+                width: 50px;
+                @media screen and (max-width: 1440px){
+                    width: 80px;
+                }
+                .table_icon {
+                    padding-right: 16px;
+                    width: 18px;
+                    height: 18px;
+                    @media screen and (max-width: 1440px){
+                        padding-right: 0;
+                    }
+                }
+
+                .table_icon_fix {
+                    padding-right: 15px;
+                    padding-top: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    svg {
+                        &:hover {
+                            path {
+                                stroke: #E5101D;
+                            }
+                        }
+
+                    }
+                    @media screen and (max-width: 1440px){
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 33.33px;
+                height: 20px;
+                margin-top: 9px;
+
+                input {
+                    opacity: 0;
+                    width: 33.33px;
+                    height: 20px;
+
+                    &:checked+.slider {
+                        background-color: #00AB56;
+                    }
+                }
+
+                input:checked+.slider:before {
+                    -webkit-transform: translateX(13px);
+                    -ms-transform: translateX(13px);
+                    transform: translateX(13px);
+                }
+
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                    border-radius: 34px;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 16.67px;
+                        height: 16.67px;
+                        left: 1.67px;
+                        bottom: 1.67px;
+                        right: 1.67px;
+                        background-color: white;
+                        transition: 0.4s;
+                        border-radius: 34px;
+                        top: 1.3px;
+
+                    }
+                }
+
+                .round {
+                    &::before {
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+        }
+
+        .MuiTableRow-hover {
+            &:hover {
+                background-color: #F3F6FC !important;
+
+                .table_setting {
+                    .table_icon {
+                        padding-right: 0;
+                        width: 18px;
+                        height: 18px;
+
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}
+
+@include desktop_large_max {
+    .table__consignment {
+        .MuiTableHead-root {
+            font-size: 14px;
+        }
+
+        .MuiTableBody-root {
+            .MuiTableCell-root {
+                padding: 12.49px;
+                font-size: 14px;
+            }
+
+            .table_setting {
+                width: 30px;
+                height: 30px;
+
+                .table_icon {
+                    padding-right: 0px;
+                    width: 18px;
+                    height: 18px;
+
+                    svg {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+
+        .MuiTableRow-hover {
+            &:hover {
+                background-color: #E2EAF8 !important;
+
+                .table_setting {
+                    .table_icon {
+                        padding-right: 30px;
+                        width: 18px;
+                        height: 18px;
+
+                        svg {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include desktop_min {
+    .table__consignment {
+        .MuiTableHead-root {
+            .MuiTableCell-root {
+                font-size: 14px;
+            }
+        }
+
+        .MuiTableBody-root {
+            .MuiTableCell-root {
+                padding: 12.49px;
+                font-size: 14px;
+            }
+
+            .table_setting {
+                width: 30px;
+                height: 30px;
+
+                .table_icon {
+                    padding-right: 0px;
+                    width: 18px;
+                    height: 18px;
+
+                    svg {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+
+        .MuiTableRow-hover {
+            &:hover {
+                background-color: #E2EAF8 !important;
+
+                .table_setting {
+                    .table_icon {
+                        padding-right: 30px;
+                        width: 18px;
+                        height: 18px;
+
+                        svg {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

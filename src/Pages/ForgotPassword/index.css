@@ -1,0 +1,142 @@
+.group-login-form {
+  animation-name: slideFromBottom;
+  animation-duration: 1s;
+}
+
+@keyframes slideFromBottom {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 145px;
+  }
+}
+
+.number-box {
+  display: flex;
+  align-items: center;
+}
+
+.otp {
+  font-family: 'GoogleSans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #0052ff;
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.otp-input {
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.otp-60s {
+  color: red;
+}
+
+.send-otp-disabled {
+  color: gray;
+  cursor: unset;
+}
+
+.pass-new-field {
+  width: 446px;
+  height: 115px;
+  position: relative;
+}
+
+.group-inpput-login-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.acp-password-new-field {
+  width: 446px;
+  height: 90px;
+  position: relative;
+}
+
+.password-note {
+  font-family: 'GoogleSans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* margin-top: 8px; */
+}
+
+#phone-number,
+#password,
+#password-new {
+  font-family: 'GoogleSans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  width: 446px;
+  height: 52px;
+  background: #f3f3f4;
+  border-radius: 4px;
+  border: 1px solid #f3f3f4;
+  box-sizing: border-box;
+  padding-left: 13px;
+  animation-name: opacityAnim;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+#phone-number {
+  padding-right: 13px;
+  margin: 0.6rem 0;
+}
+
+#password,
+#password-new {
+  padding-right: 44px;
+}
+
+#phone-number:focus,
+#password:focus,
+#password-new:focus {
+  outline: none;
+  border: 1px solid #0052FF;
+  box-shadow: 0px 0px 0px 3px rgba(97, 162, 247, 0.568);
+}
+
+#phone-number::placeholder,
+#shopname::placeholder,
+#username::placeholder,
+#password::placeholder {
+  font-family: 'GoogleSans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.004em;
+  color: #9E9EA7;
+  line-height: 52px;
+}
+
+#password,
+#password-new {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 16px;
+  margin: 8px 0;
+}
+
+@media only screen and (max-width: 1440px) {
+  #phone-number,
+  #password,
+  #password-new {
+    width: 374px;
+  }
+
+  .acp-password-new-field,
+  .pass-new-field {
+    width: 374px;
+  }
+}

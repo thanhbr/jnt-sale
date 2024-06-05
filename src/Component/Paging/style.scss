@@ -1,0 +1,13 @@
+.paging-style {
+  position: fixed;
+  bottom: 0;
+  height: 4.5rem;
+  background-color: #FFFFFF;
+  margin-left: -2.5rem;
+  width: 100%;
+  justify-content: center;
+  .Mui-selected {
+    background-color: rgb(229, 16, 29) !important;
+    color: #fff;
+  }
+}

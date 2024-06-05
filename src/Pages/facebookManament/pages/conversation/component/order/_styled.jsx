@@ -1,0 +1,41 @@
+import styled from 'styled-components'
+
+export const StyledDrawerOrderTab = styled.div`
+  position: relative;
+
+  height: calc(100vh - 112px);
+
+  overflow: auto;
+  textarea {
+    resize: none;
+  }
+  .drawer-order-tab__footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 300;
+
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 24px;
+
+    background: #fff;
+  }
+  .order-single-shipping-info__reload{
+    margin-left: 6px;
+    span{
+       cursor: pointer;
+       display: flex;
+       align-items: center;
+      svg{
+        width: 14px;
+        height: 17px;
+        path{
+          stroke: #00AB56;
+        }
+      }
+    }
+  }
+`

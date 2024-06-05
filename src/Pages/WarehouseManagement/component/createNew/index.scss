@@ -1,0 +1,160 @@
+.warehouse-create {
+
+    &__location {
+        margin-top: 5px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .warehouse-manager__create-p {
+        margin-top: 4px;
+    }
+
+    &-body {
+        margin-top: 32px;
+    }
+
+    &-title {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &-icon {
+        color: #FF424E;
+        margin-left: 2px;
+    }
+
+    &-note {
+        height: 81px;
+
+        span {
+            color: #FF424E;
+        }
+    }
+
+    &-textArea {
+        padding: 10px 8px 7px 16px;
+        grid-gap: 8px;
+        gap: 8px;
+        width: 452px;
+        height: 68px;
+        background: #FFFFFF;
+        border: 1px solid #EBEEF5;
+        border-radius: 6px;
+        margin-top: 8px;
+        resize: none;
+
+        &:hover {
+            border: 1px solid #2BB8A9;
+            box-shadow: 0px 0px 0px 2.5px rgba(43, 184, 169, 0.2);
+        }
+    }
+
+    &-position {
+        height: 88px;
+    }
+
+    &-question {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-left: 5px;
+        }
+
+        span {
+            color: #FF424E;
+        }
+    }
+
+    &-positionInput {
+        padding: 7px 8px 7px 16px;
+        gap: 8px;
+        width: 452px;
+        height: 34px;
+        background: #FFFFFF;
+        border: 1px solid #EBEEF5;
+        border-radius: 6px;
+        margin: 8px 0 5px;
+
+        &:hover {
+            border: 1px solid #2BB8A9;
+            box-shadow: 0px 0px 0px 2.5px rgba(43, 184, 169, 0.2);
+        }
+    }
+
+    &-checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: 22px;
+        cursor: pointer;
+
+        input[disabled] {
+            cursor: not-allowed;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    }
+
+    &-checkbox[data-disable=true] {
+        cursor: not-allowed;
+    }
+
+    &-checkboxText {
+        cursor: pointer;
+        margin-left: 9px;
+    }
+
+    &-status {
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+
+        .switch {
+            .slider {
+                &::before {
+                    top: 0.14rem;
+                }
+            }
+        }
+    }
+
+    &-statusText {
+        margin-left: 8px;
+    }
+
+    &-error {
+        color: #FF424E;
+        font-size: 12px;
+    }
+
+    .error_border {
+        border: 1px solid #FF424E;
+    }
+
+    .alternative-auto-complete__menu{
+        top: unset !important;
+        bottom: unset !important;
+    }
+}
+
+
+@media only screen and (max-width: 1366px) {
+    .warehouse-create {
+        &-body {
+            max-width: 363px;
+            margin-top: 32px;
+        }
+
+        &__location {
+            display: grid;
+            margin-top: 6px;
+        }
+    }
+
+    .alternative-auto-complete__menu{
+        height: 200px;
+    }
+}

@@ -1,0 +1,26 @@
+.empty__unit_table {
+    width: 1636px;
+    height: 610px;
+    text-align: center;
+    padding: 0 !important;
+    .empty__unit {
+       
+        .tr__container{
+            width: 1636px;
+            height: 610px;
+            display: block;
+            padding-top: 10rem;
+            background: #ffffff !important;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            color: #7C88A6;
+        }
+
+        &-create {
+            margin-top: 12px
+        }
+    }
+}

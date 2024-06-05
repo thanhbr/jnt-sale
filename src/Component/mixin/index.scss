@@ -1,0 +1,43 @@
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width-max: 1920px;
+$desktop-width-max-1520: 1520px;
+$desktop-large-width-min: 1440px;
+$desktop-width-min: 1366px;
+$desktop-width-max-1280: 1280px;
+@mixin mobile { @media (max-width: #{$mobile -width - 1px}) {
+  @content;
+}
+}
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width-min - 1px}) {
+  @content;
+}
+}
+
+@mixin desktop_min {   @media (min-width: #{$desktop-width-min}) and (max-width: #{$desktop-width-max - 1px}) {
+  @content;
+}
+}
+
+@mixin desktop_max {   @media (min-width: #{$desktop-width-max - 1px}) {
+  @content;
+}
+}
+
+@mixin desktop_large_max {   @media (min-width: #{$desktop-large-width-min - 1px}) and (max-width: #{$desktop-width-max - 1px})  {
+  @content;
+}}
+@mixin desktop_width_1366 {   @media (min-width: #{$desktop-width-min}) and (max-width: #{$desktop-large-width-min - 1px})  {
+  @content;
+}}
+
+@mixin desktop_width_1280 {    @media (min-width: #{$desktop-width-max-1280}) and (max-width: #{$desktop-width-min - 1px}) {
+  @content;
+}}
+
+@mixin desktop_width_1520 { @media (min-width: #{$desktop-width-max-1520}) and (max-width: #{$desktop-width-max - 1px}) {
+  @content;
+}}

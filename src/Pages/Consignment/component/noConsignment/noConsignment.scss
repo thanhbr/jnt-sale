@@ -1,0 +1,45 @@
+.consignment__data {
+    height: 38.5rem;
+
+    .consignment_image {
+        width: 120px;
+        height: 131px;
+
+    }
+
+    .consignment_p {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        color: #7C88A6;
+        margin-bottom: 12px;
+    }
+
+    .btn-consignment {
+        width: 199px;
+        height: 36px;
+        background: #1E9A98;
+        border-radius: 6px;
+        color: #ffffff;
+        border: none;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 140%;
+        color: #FFFFFF;
+        cursor: pointer;
+        &:hover{
+            background: #2BB8A9;
+        }
+        .consignment__icon {
+            margin-right: 8px;
+
+            svg {
+                padding-top: 3px;
+            }
+        }
+    }
+
+}

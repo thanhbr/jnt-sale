@@ -1,0 +1,264 @@
+@import "src/Component/mixin";
+
+.general_unit {
+    animation: fadeInRight .3s ease-in-out;
+    background: white;
+    position: absolute;
+    top: 3.47rem;
+    right: 0;
+    // width: 31.25rem;
+    height: 100%;
+    overflow-y: scroll;
+    // padding: 1.5rem;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+
+
+    .bgp {
+        height: 6.0625rem;
+    }
+
+    .grp_avatar {
+        width: 6rem;
+        height: 6rem;
+        border: .1875px solid var(--white-color);
+        border-radius: 50%;
+        background: #F9F9FB;
+
+        position: absolute;
+        top: 2.625rem;
+        left: 13rem;
+        //box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
+        cursor: pointer;
+
+        .avatar {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        span:before {
+            content: "";
+            width: 1rem;
+            height: 1rem;
+            background: var(--plum-color);
+            position: absolute;
+            bottom: 0;
+            right: 7px;
+            border-radius: 50%;
+        }
+    }
+
+    .content {
+        margin-top: 3.25rem;
+        text-align: center;
+
+        .info {
+            .name {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21px;
+                color: #222222;
+                margin-bottom: 8px;
+            }
+
+            .package {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 20px;
+                color: #1E9A98;
+                display: flex;
+
+                padding: 4px 10px;
+                background: rgba(43, 184, 169, 0.1);
+                width: fit-content;
+                margin: 0 auto;
+                border-radius: var(--border-radius-component);
+                margin-bottom: 8px;
+
+                svg {
+                    margin: .0625rem .3125rem;
+                }
+            }
+
+            .duration {
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    margin-right: 8px;
+                    cursor: pointer;
+                    color: var(--color-link-up2022-7);
+                }
+
+                svg {
+                    margin-top: 8px;
+
+                    path {
+                        fill: var(--color-link-up2022-7);
+                    }
+                }
+
+                .list {
+                    position: absolute;
+                    left: 10.5rem;
+                    z-index: 2;
+                    background: var(--white-color);
+                    border-radius: var(--border-radius);
+                    padding: 12px 10px;
+                    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                    top: 24px;
+
+                    a {
+                        padding: 12px 10px;
+                        text-align: left;
+                        display: block;
+                        color: var(--color-li-up2022-7);
+                        margin: 0;
+                    }
+
+                    a:hover {
+                        background: #F2F9FD;
+                        border-radius: var(--border-radius-component);
+                    }
+                }
+            }
+        }
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    &-group {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        max-width: 544px;
+    }
+
+    &-info {
+        padding: 1.5rem;
+        // height: 50.8rem;
+    }
+
+    .button_unit {
+        text-align: right;
+        background: #FFFFFF;
+        height: 64px;
+        border-top: 1px solid #EBEEF5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 24px;
+        margin-bottom: 3.5rem;
+
+        &-cancel {
+            width: 74px;
+            height: 36px;
+            margin-right: 1rem;
+        }
+
+        &-save {
+            width: 110px;
+            height: 36px;
+            margin-left: 12px;
+        }
+    }
+
+
+}
+
+.dismiss_unit {
+    animation: fadeInRight .3s ease-in-out;
+    position: fixed;
+    top: 3.47rem;
+    right: 34rem;
+    cursor: pointer;
+    background: rgba(124, 142, 160, 1);
+    padding: 0.3rem;
+    width: 24px;
+    height: 24px;
+    background: #7C8EA0;
+}
+
+//modal confirm
+.warehouse-manager_note-confirm {
+    width: 480px;
+    height: 196px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &_text {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    &_button {
+        text-align: right;
+    }
+
+    &_cancel {
+        width: 110px;
+        height: 32px !important;
+        line-height: unset !important;
+        // border: 1px solid #EBEEF5;
+        // border-radius: 6px;
+    }
+
+    &_acept {
+        width: 110px;
+        height: 32px !important;
+        margin-left: 8px;
+        line-height: unset !important;
+    }
+
+    &_close {
+        width: 110px !important;
+        height: 32px !important;
+        border: 1px solid #EBEEF5 !important;
+        background: #FFFFFF !important;
+        border-radius: 6px !important;
+        font-weight:  400 !important;
+        font-size: 14px !important;
+        line-height: 140% !important;
+        color: #151624 !important;
+    }
+}
+
+// @include desktop_width_1280{
+//     .general_unit {
+//         &-info {
+//             height: 43.8rem;
+//         }
+//     }
+// }
+// @include desktop_min{
+//     .general_unit {
+//         &-info {
+//             height: 43.8rem;
+//         }
+//     }
+// }
+// @include desktop_large_max{
+//     .general_unit {
+//         &-info {
+//             height: 39.8rem;
+//         }
+//     }
+// }
+
+@media only screen and (max-width: 1366px) {
+    .dismiss_unit {
+        right: 31.29rem;
+    }
+}

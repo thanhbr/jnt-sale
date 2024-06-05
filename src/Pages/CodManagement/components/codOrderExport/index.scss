@@ -1,0 +1,28 @@
+.cod-export__confirm {
+  width: 480px;
+  height: 204px;
+  padding : 24px;
+  .cod-export_group{
+    .cod-export_txt {
+      margin-top: 24px ;
+    }
+  }
+  [data-appearance='ghost'] {
+    width: 101px;
+    font-size: 14px;
+    padding: 0px;
+    font-weight: 400;
+    height: 32px;
+  }
+  [data-appearance='primary'] {
+    width: 112px;
+    font-size: 14px;
+    padding: 0px;
+    font-weight: 600;
+    height: 32px;
+  }
+  .confirm-popup__group-btn {
+    margin-top: 2.38em ;
+  }
+
+}

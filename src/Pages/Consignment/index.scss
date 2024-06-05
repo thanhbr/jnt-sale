@@ -1,0 +1,338 @@
+@import './src/Component/mixin';
+.congsignment__main {
+    margin-bottom: 21px;
+    .congsignment__header {
+
+
+        .MuiButton-root {
+            min-width: 0;
+        }
+
+        .congsignment__group {
+            .congsignment__p {
+                width: 157px;
+                height: 34px;
+                font-family: "SF Pro Display";
+                font-size: 24px;
+                line-height: 140%;
+                color: #151624;
+            }
+
+            .congsignment__setting {
+                width: 95px;
+                height: 20px;
+                font-family: "SF Pro Display";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: #7c88a6;
+            }
+
+            .congsignment__arrow {
+                margin-left: 9px;
+                margin-right: 9px;
+            }
+
+            .congsignment__export {
+                padding: 10px 12px;
+                width: 144px;
+                height: 40px;
+                border: 1px solid #1e9a98;
+                border-radius: 6px;
+                color: #1e9a98;
+                margin-right: 12px;
+
+                .congsignment__icon {
+                    margin-right: 6px;
+                    margin-top: 4px;
+                }
+            }
+
+            .congsignment__addNew {
+                width: 114px;
+                height: 36px;
+                background: #1E9A98;
+                border-radius: 6px;
+                color: #ffffff;
+                margin-left: 12px;
+                &:hover{
+                    background: rgba(30, 154, 152, 0.8);
+                }
+                .congsignment__plus {
+                    margin-right: 8px;
+                }
+            }
+
+            .congsignment__reload {
+                width: 36px;
+                height: 36px;
+                background: #FFFFFF;
+                border: 1px solid #1E9A98;
+                border-radius: 6px;
+                &:hover{
+                    background: rgba(75, 174, 173, 0.2);
+                }
+            }
+        }
+    }
+}
+
+.box_confirm_consignment {
+    width: 480px;
+    height: 196px;
+    background: #ffffff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: fixed;
+    top: 20rem;
+    left: 42rem;
+
+    .confirm_title {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: #00081d;
+    }
+
+    .confirm_text {
+        width: 432px;
+        height: 40px;
+        position: absolute;
+        top: 76px;
+        left: 24px;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #00081d;
+    }
+
+    .confirm_button {
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+
+        .confirm_cancel {
+            width: 110px;
+            height: 32px;
+            background: #ffffff;
+            border-radius: 6px;
+            text-transform: none;
+            font-size: 14px;
+        }
+
+        .confirm_acept {
+            width: 110px;
+            height: 32px;
+            border-radius: 6px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14px;
+            margin-left: 8px;
+            text-transform: none;
+
+        }
+    }
+}
+
+.box_modal {
+    .dismiss_consginment {
+        animation: fadeInRight 0.3s ease-in-out;
+        position: fixed;
+        top: 3.47rem;
+        right: 34rem;
+        cursor: pointer;
+        background: rgba(124, 142, 160, 1);
+        padding: 0.3rem;
+        width: 24px;
+        height: 24px;
+        background: #7c8ea0;
+    }
+
+    .general {
+        animation: fadeInRight 0.3s ease-in-out;
+        background: white;
+        position: absolute;
+        top: 3.47rem;
+        right: 0;
+
+        width: 34rem;
+        height: 100%;
+        overflow-y: scroll;
+
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+
+        padding: 1.5rem;
+
+        .bgp {
+            height: 6.0625rem;
+        }
+
+        .grp_avatar {
+            width: 6rem;
+            height: 6rem;
+            border: 0.1875px solid var(--white-color);
+            border-radius: 50%;
+            background: #f9f9fb;
+
+            position: absolute;
+            top: 2.625rem;
+            left: 13rem;
+            //box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
+            cursor: pointer;
+
+            .avatar {
+                width: 6rem;
+                height: 6rem;
+            }
+
+            span:before {
+                content: "";
+                width: 1rem;
+                height: 1rem;
+                background: var(--plum-color);
+                position: absolute;
+                bottom: 0;
+                right: 7px;
+                border-radius: 50%;
+            }
+        }
+
+        .content {
+            margin-top: 3.25rem;
+            text-align: center;
+
+            .info {
+                .name {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #222222;
+                    margin-bottom: 8px;
+                }
+
+                .package {
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #1e9a98;
+                    display: flex;
+
+                    padding: 4px 10px;
+                    background: rgba(43, 184, 169, 0.1);
+                    width: fit-content;
+                    margin: 0 auto;
+                    border-radius: var(--border-radius-component);
+                    margin-bottom: 8px;
+
+                    svg {
+                        margin: 0.0625rem 0.3125rem;
+                    }
+                }
+
+                .duration {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        margin-right: 8px;
+                        cursor: pointer;
+                        color: var(--color-link-up2022-7);
+                    }
+
+                    svg {
+                        margin-top: 8px;
+
+                        path {
+                            fill: var(--color-link-up2022-7);
+                        }
+                    }
+
+                    .list {
+                        position: absolute;
+                        left: 10.5rem;
+                        z-index: 2;
+                        background: var(--white-color);
+                        border-radius: var(--border-radius);
+                        padding: 12px 10px;
+                        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                        top: 24px;
+
+                        a {
+                            padding: 12px 10px;
+                            text-align: left;
+                            display: block;
+                            color: var(--color-li-up2022-7);
+                            margin: 0;
+                        }
+
+                        a:hover {
+                            background: #f2f9fd;
+                            border-radius: var(--border-radius-component);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.hide {
+            display: none;
+        }
+    }
+}
+
+.modal_custom {
+    animation: fadeInLeft 0.3s ease-in-out;
+    height: 100%;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(18.75rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(18.75rem);
+    }
+}
+@include desktop_width_1280{
+
+    .box_confirm_consignment{
+        top: 16rem;
+        left: 30rem;
+    }
+}
+@include desktop_width_1366{
+    .box_confirm_consignment{
+        top: 15rem;
+        left: 33rem;
+    }
+}
+@include desktop_large_max{
+    .box_confirm_consignment{
+        top: 17rem;
+        left: 30rem;
+    }
+}

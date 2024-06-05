@@ -1,0 +1,119 @@
+@import "src/Component/mixin";
+.modal-upos-custom {
+  &__box {
+    animation: fadeInRight .3s ease-in-out;
+    background: white;
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+
+    width: 31.25rem;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 1.5rem;
+
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  &__dismiss {
+    width: 1.5rem;
+    height: 1.5rem;
+    animation: fadeInRight .3s ease-in-out;
+    position: fixed;
+    top: 3.5rem;
+    right: 31.25rem;
+    cursor: pointer;
+    background: rgba(124, 142, 160, 1);
+    padding: 0.2rem .3rem;
+    svg {
+      height: 1rem;
+      width: 1rem;
+    }
+    @include desktop_min{
+      padding: .1rem .25rem;
+    }
+  }
+  &__close {
+    animation: fadeInLeft .3s ease-in-out;
+    height: 100%;
+  }
+  &__title {
+    width: 27.75rem;
+    height: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: .25rem;
+  }
+  &__sub-title {
+    width: 27.75rem;
+    height: 2.625rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+  }
+  &__content {
+    max-height: 81vh;
+    overflow-y: scroll;
+    width: 104%;
+    &-title {
+      font-weight: 600;
+      font-size: 16px;
+      margin: 1.5rem 0;
+    }
+    &-keyword {
+      margin: 0 0 0.5rem 0;
+      &-item {
+        color: #DB7B2F;
+        padding: .125rem .25rem;
+        height: 1.25rem;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      &-sub-item {
+        //margin-left: -1.25rem;
+        font-size: 14px;
+      }
+    }
+    &-keyword-group {
+      background: #FFF3D9;
+      height: 1.25rem;
+      //max-width: 8.375rem;
+    }
+    &-keyword-btn {
+      //width: 3.3125rem;
+      height: 1.5rem !important;
+      padding: 0 8px !important;
+      line-height: 1.25rem !important;
+      font-weight: 600;
+      font-size: 12px !important;
+    }
+  }
+
+  .modal_custom {
+    animation: fadeInLeft .3s ease-in-out;
+    height: 100%;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(18.75rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(18.75rem);
+  }
+}

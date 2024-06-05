@@ -1,0 +1,38 @@
+.customer-tr-empty {
+  height: 60vh;
+
+  .container-empty {
+    text-align: center;
+
+    a{
+      display: flex;
+      justify-content: center;
+    }
+
+    .text-empty {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      /* identical to box height, or 20px */
+
+      text-align: center;
+
+      color: #7C88A6;
+
+      margin: 1rem 0;
+    }
+
+
+    .action-btn {
+      width: 183px;
+      height: 36px;
+
+      background: #1E9A98;
+      border-radius: 6px;
+
+      &:hover {
+        background: rgba(30, 154, 152, 0.8);
+      }
+    }
+  }
+}

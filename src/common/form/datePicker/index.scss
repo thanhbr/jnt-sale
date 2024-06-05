@@ -1,0 +1,87 @@
+.rs-picker-daterange-header {
+  display: none;
+}
+
+.rs-picker-menu {
+  z-index: 99999;
+}
+
+.rs-calendar-time-view .rs-calendar-time-dropdown {
+  display: block;
+}
+
+.rs-calendar-time-view .rs-calendar-time-dropdown-content {
+  -webkit-animation: i .3s linear !important;
+  animation: i .3s linear !important;
+}
+
+.rs-calendar-btn-close {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  background: #fff;
+  background: var(--rs-bg-overlay);
+  border: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 14px;
+  justify-content: center;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.rs-picker-toolbar.rs-stack {
+  justify-content: flex-end !important;
+}
+
+.rs-calendar-time-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  background-color: #fff;
+  background-color: var(--rs-bg-overlay);
+  color: #575757;
+  color: var(--rs-text-primary);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.rs-calendar-time-dropdown-cell {
+  border-radius: 6px;
+  margin: 4px;
+  padding: 2px 0;
+}
+.content-request__item-input {
+  .rs-picker-disabled {
+    opacity: 1 !important;
+
+    input {
+      background: #f3f6fc !important;
+    }
+  }
+
+  .date-picker__date-input .rs-btn-disabled:hover {
+    border-color: #f7f7fa !important;
+  }
+
+  .rs-picker-toggle-clean.rs-btn-close{
+    display: none!important;
+  }
+}
+
+.content-request__item-input-validate {
+  .date-picker__date-input [role='combobox']:hover {
+    border-color: red !important;
+  }
+  .date-picker__date-input [role='combobox'] {
+    border-color: red !important;
+  }
+}

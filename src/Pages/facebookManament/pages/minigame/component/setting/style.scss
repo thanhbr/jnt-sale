@@ -1,0 +1,72 @@
+.setting-mini-game {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 53px;
+    right: 53px;
+
+    &__icon {
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+
+    &__update {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 283px;
+        height: 28px;
+        background: linear-gradient(143.92deg, rgba(3, 53, 230, 0.4) -4.76%, rgba(2, 134, 255, 0.4) 121.25%);
+        backdrop-filter: blur(40px);
+        border-radius: 60px;
+        cursor: pointer;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        margin-left: 7px;
+    }
+}
+.setting-confirm-modal-mini-game{
+    width: 670px;
+    height: auto;
+    margin: 4.5rem auto 0 auto;
+    @media screen and (max-width: 1440px){
+        margin: 0 auto 0 auto;
+        overflow: auto;
+    }
+    @media screen and (max-width: 1366px){
+        margin: 1.5rem auto 0 auto;
+        overflow: auto;
+        height: 585px;
+    }
+    &_action-button{
+        .confirm-popup__save{
+            width: 103px;
+            padding: 0 !important ;
+        }
+        .confirm-popup__dismiss{
+            width: 103px;
+            padding: 0 !important ;
+        }
+    }
+}
+.setting-confirm-modal-mini-game::-webkit-scrollbar-track {
+    border-radius: 10px;
+    //background-color: var(--white-color);
+}
+
+.setting-confirm-modal-mini-game::-webkit-scrollbar {
+    width: 0.575rem;
+    background-color: unset;
+}
+
+.setting-confirm-modal-mini-game::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color:#EBEEF5;
+    marign-right: 30px;
+}

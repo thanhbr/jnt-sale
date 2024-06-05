@@ -1,0 +1,18 @@
+.unit__note-main{
+    margin-bottom: 1.43rem;
+    .delevery__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .unit_table{
+        .table-layout__table{
+            .table-layout__table-container{
+                border-bottom: 1px solid #e2eaf8;
+                .table-layout__table-t-body{
+                    border-bottom: 1px solid #e2eaf8;
+                }
+            }
+        }
+    }
+}

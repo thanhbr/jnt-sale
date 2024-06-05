@@ -1,0 +1,48 @@
+export const initialDelivery = {
+    isloading: false,
+    openModal:false,
+    listNote: [],
+    meta: {
+        start: 0,
+        per_page: 20,
+        total: 20,
+    },
+    emptyTitle: 'Bạn chưa có mẫu ghi chú giao hàng nào',
+    infoNote:'',
+    is_check_default:false,
+    is_switch_active:true,
+    content:'',
+    position:0,
+    is_default:0,
+    status: 1,
+    isCheckAll:false,
+    isCheck:[],
+    is_active:[],
+    count:0,
+    idCheck:[],
+    valid_note:{
+        valid:false,
+        error:''
+    },
+    valid_position:{
+        valid:false,
+        error:''
+    },
+    disable_save:false,
+    item_drop:'',
+    check_search:false,
+    openConfirm:false,
+    checkConfirm:false,
+    checkEmpty:false,
+    checkErrorPosition:false,
+    pagination: {
+        active: 0,
+        amount: 20,
+        total: 0,
+        totalItems: 0,
+      },
+    valueSearch:'',
+    change_modal:false,
+    id_default:'',
+    check_before_update:{},
+}

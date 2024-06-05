@@ -1,0 +1,11 @@
+.accept {
+    background-color: green;
+}
+
+.delete {
+    background-color: red;
+}
+.custorm-btn .btn_cancel:hover {
+    color: var(--bg-pr-large-hover) !important;
+    background: var(--white-color) !important;
+}

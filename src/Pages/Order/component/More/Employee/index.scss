@@ -1,0 +1,111 @@
+.order-filter-more {
+  &__grp-employee {
+    position: relative;
+    max-width: 24.5rem;
+    padding-right: .25rem;
+    input {
+      width: 99%;
+      max-height: 2.125rem;
+      padding: .5rem 2.375rem .5rem 9rem;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+
+      border: 1px solid var(--background-border);
+      border-radius: var(--border-radius-component);
+
+      position: absolute;
+      top: 0;
+    }
+  }
+  &__employee {
+    width: 10rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    position: absolute;
+    top: .5rem;
+    left: .75rem;
+    z-index: 1;
+    &-select {
+      display: flex;
+      cursor: pointer;
+      svg {
+        margin: .35rem 0 0 .35rem;
+        transition: all .5s;
+        path {
+          fill: rgba(124, 136, 166, 1);
+        }
+      }
+      &.active{
+        svg {
+          transform: rotate(180deg);
+          transition: all .5s;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: .3rem;
+        left: 7.5rem;
+
+        width: 1px;
+        height: .75rem;
+        background: rgba(235, 238, 245, 1);
+      }
+    }
+    &-option {
+      margin: 1rem 0 0 -.875rem;
+      background: var(--white-color);
+      box-shadow: var(--box-shadow);
+      border-radius: var(--border-radius-component);
+      padding: .5rem;
+      max-height: 17.25rem;
+      overflow-y: scroll;
+
+      p {
+        padding: .5rem;
+        border-radius: var(--border-radius-component);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        &:hover {
+          background: var(--li-hover);
+          color: var(--bg-pr-large-hover);
+          cursor: pointer;
+        }
+      }
+    }
+    &-list {
+      margin: 1rem 0 0 -.875rem;
+      background: var(--white-color);
+      box-shadow: var(--box-shadow);
+      border-radius: var(--border-radius-component);
+      padding: .5rem;
+      max-height: 17.25rem;
+      min-width: 24rem;
+      overflow-y: scroll;
+
+      p {
+        padding: .5rem;
+        border-radius: var(--border-radius-component);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        &:hover {
+          background: var(--li-hover);
+          color: var(--bg-pr-large-hover);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .order-filter-more__grp-employee input {
+    padding: 0.5rem 2.375rem 0.5rem 10rem;
+  }
+}

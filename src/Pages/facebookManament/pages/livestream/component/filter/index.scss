@@ -1,0 +1,13 @@
+.response-filter-form{
+  &__option-text{
+    margin-bottom: 16px;
+  }
+  &__option-value{
+    display: flex;
+    align-items: center;
+    img{
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+  }
+}

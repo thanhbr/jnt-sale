@@ -1,0 +1,78 @@
+.common-tooltip-error {
+  max-width: 300px;
+
+  &.unset-max-width {
+    max-width: 500000px;
+
+    .MuiTooltip-tooltip {
+      max-width: 500000px;
+    }
+  }
+  &.alert-address {
+    max-width: 500px;
+
+    .MuiTooltip-tooltip {
+      max-width: 500px;
+    }
+  }
+
+  &.--transparent {
+    opacity: 0;
+
+    pointer-events: none;
+  }
+
+  &.--danger {
+    .MuiTooltip-tooltip {
+      padding: 4px 12px;
+
+      backdrop-filter: blur(40px);
+      background: rgba(255, 66, 78, 0.8);
+      border-radius: 6px;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+
+      color: #fff;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 17px;
+
+      .MuiTooltip-arrow {
+        &:before {
+          background: rgba(255, 66, 78, 0.8);
+        }
+      }
+    }
+  }
+
+  .MuiTooltip-tooltip {
+    padding: 4px 12px;
+
+    backdrop-filter: blur(40px);
+    background: rgba(255, 66, 78, 0.8);
+    border-radius: 6px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+
+    .MuiTooltip-arrow {
+      &:before {
+        background: rgba(255, 66, 78, 0.8);
+      }
+    }
+  }
+}
+
+.common-popover {
+  .MuiPaper-root {
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.common-alert {
+  top: 76px !important;
+}

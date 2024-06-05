@@ -1,0 +1,61 @@
+.footer-mini-game {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    max-height: 280px;
+    min-height: 200px;
+    @media screen and (max-height: 770px){
+        margin-top: 4px;
+    }
+    &__group {
+        width: 532px;
+        height: 119px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &__icon-participant{
+        position: absolute;
+        top: -35px;
+
+    }
+    &__icon-comment{
+        position: absolute;
+        top: -36px;
+
+    }
+    &__icon-phone{
+        position: absolute;
+        top: -36px;
+
+    }
+    &__text {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__number {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        font-weight: 700;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+}

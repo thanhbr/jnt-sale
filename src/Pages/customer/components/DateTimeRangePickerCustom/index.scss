@@ -1,0 +1,62 @@
+@import "./rsuite-datetime.css";
+@import "../../../../Component/mixin/index.scss";
+.date-time-range-picker-custom {
+
+  input {
+      padding-right: 3rem !important;
+      &::placeholder { 
+      // color: deeppink;
+      // padding-right: 3rem;
+      font-size: 13px;
+      text-transform: unset;
+    }
+    
+    &:focus{
+
+    }
+  }
+  
+  position: relative;
+  max-height: 32px;
+  .rs-picker-toggle-wrapper {
+    width: 100%;
+  }
+  .rs-picker-toggle.rs-btn-default {
+    padding: 0.4rem 2rem 0.4rem 0.7rem !important;
+    max-height: 32px;
+    @include desktop_min{
+      padding-top: 2px;
+      padding-left: 6.125rem;
+    }
+
+    &:hover, &:active {
+      border: 1px solid var(--bg-pr-large-hover);
+    }
+
+    .rs-picker-toggle-value {
+      width: 100%;
+      max-width: 340px;
+      font-size: 13px;
+      color: #7C88A6;
+      padding-left: 7.5rem;
+    }
+    .rs-picker-toggle-placeholder {
+      padding-left: 2rem;
+    }
+    .rs-icon {
+      @include desktop_min{
+        margin-top: -.546875rem;
+      }
+    }
+    .rs-picker-toggle-caret.rs-icon {
+      opacity: 0;
+    }
+  }
+}
+
+.rs-calendar-month-view .rs-calendar-month-dropdown{
+  display: block;
+}
+.rs-calendar-month-dropdown.show{
+  display: block;
+}

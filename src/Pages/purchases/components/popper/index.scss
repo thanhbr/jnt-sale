@@ -1,0 +1,20 @@
+.common-popover__selected-action-menu{
+  width: 100%;
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  .common-popover__selected-action-menu-item {
+    padding: 8px;
+    a{
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      color: #00081D;
+      &:hover {
+        color: #1e9a98;
+      }
+    }
+  }
+}

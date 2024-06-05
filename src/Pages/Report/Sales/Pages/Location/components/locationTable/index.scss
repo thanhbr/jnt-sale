@@ -1,0 +1,132 @@
+.location-management-table {
+
+  &__row {
+    &[data-active="true"] {
+      background: #f3f6fc;
+    }
+
+    &:hover {
+      .notebook-customer{
+        display: block;
+      }
+    }
+  }
+
+  &__cell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &[data-menu="true"] {
+      position: relative;
+    }
+
+    &[data-type="td"] {
+      display: block !important;
+      text-align: right;
+
+      p {
+        width: 100% !important;
+        overflow: hidden;
+      }
+
+      &:nth-child(1) {
+        justify-content: center;
+        text-align: center;
+      }
+
+      &:nth-child(2) {
+        text-align: left;
+      }
+
+      &:nth-child(3) {
+        display: flex !important;
+        align-items: center;
+      }
+
+      &:nth-child(4) {
+        display: flex !important;
+        align-items: center;
+      }
+    }
+
+    &[data-type="th"] {
+      padding: 3px 12px !important;
+      &:nth-child(2) {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+
+    &:nth-child(1) {
+      width: 42px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:nth-child(2) {
+      display: block;
+      width: 16%;
+      border-right: 1px solid #E2EAF8;
+      flex: 1;
+    }
+
+    &:nth-child(3) {
+      width: 10%;
+      text-align: right;
+    }
+
+    &:nth-child(4) {
+      width: 14%;
+      text-align: right;
+    }
+
+    &:nth-child(5) {
+      width: 14%;
+      text-align: right;
+    }
+
+    &:nth-child(6) {
+      width: 14%;
+      text-align: right;
+      border-right: 1px solid #E2EAF8;
+    }
+
+    &:nth-child(7) {
+      width: 12%;
+      text-align: right;
+    }
+
+    &:nth-child(8) {
+      width: 12%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-weight: 600;
+    }
+
+    &:nth-child(9) {
+      width: 56px;
+      display: flex!important;
+      justify-content: center;
+    }
+    .notebook-customer{
+      display: none;
+    }
+  }
+
+  &__container-table {
+    width: 100%;
+  }
+
+  &__tooltipV2 {
+    display: -webkit-box;
+    height: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

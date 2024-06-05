@@ -1,0 +1,142 @@
+@import "../../../../Component/mixin/index";
+
+.content-shipping-tracking {
+  background-image: url(bg-shipping-tracking.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  height: 746px;
+
+  .header-content-right {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    a:hover{
+      color: #1A94FF!important;
+      background: #ffffff;
+      border-color: #1A94FF!important;
+    }
+  }
+}
+
+.card-content {
+  padding: 1rem;
+  box-shadow: none !important;
+  position: relative;
+
+  .header-tracking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+
+  .growth-card {
+    height: auto;
+
+    &__left {
+      .image-top {
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      &-title {
+        font-style: italic;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 21px;
+        color: #27272A;
+        @include desktop_min {
+          font-size: 14px;
+        }
+      }
+
+      &-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #27272A;
+        @include desktop_min {
+          font-size: 12px;
+        }
+      }
+
+      &-amount {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 36px;
+        color: #E5101D;
+        @include desktop_min {
+          font-size: 20px;
+        }
+      }
+
+      &__items {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: 16px;
+
+        }
+      }
+    }
+  }
+
+  .card-reward {
+    position: absolute;
+    bottom: -0.4rem;
+    right: 9px;
+
+    @include desktop_min {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+//@media screen and (max-width:1680px) {
+//  .card-content {
+//    .growth-card {
+//      height: 182px;
+//    }
+//  }
+//
+//}
+@media screen and (max-width: 1366px) {
+  .card-content {
+    .growth-card {
+      height: 75px;
+
+      .growth-card__left__items-btn-upgrade {
+        border: 1px solid #E5101D;
+        border-radius: 4px;
+        margin-right: 12px;
+        padding: 5px 21px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #E5101D;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+}
+
+@include desktop_min {
+  .card-content {
+    .header-tracking {
+      display: block !important;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 27.875rem;
+    height: 2.5rem;
+    background: rgba(255,85,85,.1);
+    border: 1px solid #f55;
+    border-radius: var(--border-radius);
+    font-style: normal;
+    font-size: 14px;
+    padding: .8125rem;
+    margin-bottom: 1.75rem;
+
+    .group {
+        display: flex;
+        align-items: center;
+        .icon {
+            margin: .25rem .5rem 0 0;
+        }
+    }
+    .close {
+        cursor: pointer;
+    }
+}

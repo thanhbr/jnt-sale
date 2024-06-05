@@ -1,0 +1,74 @@
+@import "../../Component/mixin/";
+
+.Control-Panel-Wrapper {
+  width: 100%;
+  transition: all 0.5s ease 0s;
+}
+.body-guide-wrapper,
+.body-trans-check-wrapper,
+.body-trans-status-wrapper {
+  background: #ffffff;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
+
+.body-trans-status-wrapper {
+  margin-right: 1.5rem;
+
+  @media only screen and (max-width: 1580px){
+    margin-right: 0;
+
+  }
+}
+
+.body-service-wrapper,
+.body-guide-wrapper {
+  margin-left: 1.5rem;
+}
+.body-guide-wrapper {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.body-report-wrapper {
+  background-color: #ffffff;
+  border-radius: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+.reportContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+/* .reportContainer .header-report {
+  flex: 1;
+}
+.reportContainer .chart-container {
+  flex: 3;
+} */
+.control-panel-row-1 {
+  /* max-height: 40%; */
+}
+
+
+@media (min-width: 1366px) {
+  .body-trans-status-wrapper {
+    // margin-right: 1.5rem;
+  }
+}
+@media (min-width: 1px) and (max-width: 960px) {
+  .body-trans-check-wrapper,
+  .body-trans-status-wrapper {
+    margin-top: 1.5rem;
+  }
+}
+.user-guilde-wrapper .list-wrapper {
+  height: 130px;
+}
+.report-seemore {
+  text-decoration: underline;
+}

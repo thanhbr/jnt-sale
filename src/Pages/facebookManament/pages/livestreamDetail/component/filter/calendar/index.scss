@@ -1,0 +1,22 @@
+
+.facebook-calendar {
+  .rs-picker-daterange-header {
+    display: none;
+  }
+
+  .rs-picker-toolbar.rs-stack {
+    justify-content: flex-end !important;
+  }
+
+
+  .category-date-time-range-picker__date-input [role='combobox'] {
+    height: 0px !important;
+  }
+
+  .rs-picker-toggle-textbox {
+    cursor: pointer;
+  }
+}
+.rs-picker-menu {
+  z-index: 10000 !important;
+}

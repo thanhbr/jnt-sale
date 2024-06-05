@@ -1,0 +1,13 @@
+.p-no-connection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    &__container {
+        display: inline-block;
+        margin: auto;
+        text-align: center  ;
+    }
+}

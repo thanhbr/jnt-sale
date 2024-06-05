@@ -1,0 +1,84 @@
+.checkbox-all {
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        color: dodgerblue;
+        vertical-align: middle;
+        -webkit-appearance: none;
+        background: none;
+        border: 1px solid #DDDDE3;
+        outline: 0;
+        flex-grow: 0;
+        border-radius: 4px;
+        background-color: #F5F5FA;
+        transition: background 300ms;
+        cursor: pointer;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            color: transparent;
+            width: 16px;
+            height: 16px;
+            background-color: transparent;
+            background-size: contain;
+        }
+
+        &:checked {
+            background-color: #1E9A98;
+            border: 1px solid #1E9A98;
+        }
+
+        &:checked::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 5px;
+            border: 2px solid #fff;
+            border-top: none;
+            border-right: none;
+            opacity: 1;
+            content: '';
+            -webkit-transition: opacity 0.25s;
+            transition: opacity 0.25s;
+            -webkit-transform: translate(-50%,-65%) rotate(-45deg);
+            -ms-transform: translate(-50%,-65%) rotate(-45deg);
+            transform: translate(-50%,-65%) rotate(-45deg);
+            pointer-events: none;
+        }
+
+        &:hover {
+            border: 1px solid #1E9A98;
+            box-shadow: 0px 0px 0px 2px rgba(30, 154, 152, 0.15);
+            border-radius: 4px;
+        }
+    }
+
+
+    #table-header {
+        width: 20px;
+    }
+
+    .checked-less {
+        border: 1px solid rgb(229, 16, 29) !important;
+        background-color: rgb(229, 16, 29) !important;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 10px !important;
+            height: 2px !important;
+            background: #fff !important;
+            border: none;
+            -webkit-transform: translate(-50%,-50%) !important;
+            -ms-transform: translate(-50%,-50%) !important;
+            transform: translate(-50%,-50%) !important;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import "src/Component/mixin";
+.payment-confirm_modal{
+  height: 204px !important;
+  width: 480px  !important;
+  margin: 21rem auto 0 auto;
+  .confirm-popup__group-btn{
+    margin-top : 32px !important;
+  }
+  button{
+    font-size: 14px;
+    width: 6.875rem;
+    height: 2rem;
+    padding:0;
+  }
+}
+@include desktop_width_1280{
+  .payment-confirm_modal{
+    margin:  14rem auto 0 auto;
+  }
+}
+@include desktop_width_1366{
+  .payment-confirm_modal{
+    margin: 17rem auto 0 auto;
+  }
+}
+@include desktop_large_max{
+  .payment-confirm_modal{
+    margin: 18rem auto 0 auto;
+  }
+}

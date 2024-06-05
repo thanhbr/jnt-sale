@@ -1,0 +1,101 @@
+.delivery_info {
+    .delivery__create-p{
+        margin-top: 4px;
+    }
+    &-body {
+        margin-top: 32px;
+    }
+    &-title{
+        display: flex;
+        align-items: flex-start;
+    }
+    &-icon {
+        color: #FF424E;
+        margin-left: 2px;
+    }
+    &-note{
+        height: auto;
+        div{
+            height: auto;
+        }
+        .textarea__validate{
+            top: unset !important;
+            bottom: -15px;
+        }
+        .textarea__input{
+            resize: none !important;
+        }
+        .textarea__validate-v2{
+            margin-top: 3px;
+        }
+    }
+
+
+    &-position {
+        height: 81px;
+        margin-top:24px;
+    }
+    &-question{
+        display: flex;
+        align-items: center;
+        svg{
+            margin-left: 5px;
+        }
+    }
+    &-positionInput {
+        padding: 7px 8px 7px 16px;
+        gap: 8px;
+        width: 100%;
+        height: 34px;
+        background: #FFFFFF;
+        border: 1px solid #EBEEF5;
+        border-radius: 6px;
+        margin-top: 8px;
+        &:hover {
+            border: 1px solid #1A94FF;
+            box-shadow: 0px 0px 0px 2.5px rgba(26, 148, 255, 0.2);
+        }
+        &:focus{
+            border-color:#1A94FF !important;
+        }
+    }
+    &-checkbox{
+        display: flex;
+        align-items: center;
+        margin-top: 4px;
+        cursor: pointer;
+        
+        input[disabled]{
+            cursor: not-allowed;
+        }
+    }
+    &-checkbox[data-disable=true]{
+        cursor: not-allowed;
+    }
+    &-checkboxText{
+        margin-left: 9px;
+    }
+    &-status{
+        margin-top: 33px;
+        display: flex;
+        align-items: center;
+        .switch{
+            .slider{
+                &::before{
+                    top: 0.14rem;
+                }
+            }
+        }
+    }
+    &-statusText{
+        margin-left: 8px;
+    }
+    &-error{
+        color: #FF424E;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    .error_border{
+        border: 1px solid #FF424E;
+    }
+}

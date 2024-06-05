@@ -1,0 +1,26 @@
+.order-advanced-search__popover {
+  .MuiPaper-root {
+    width: 380px;
+    padding: 20px;
+  }
+
+  .order-advanced-search {
+    &__header,
+    &__body {
+      margin: 0 0 24px 0;
+    }
+
+    &__form-group {
+      margin: 0 0 24px 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+    &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

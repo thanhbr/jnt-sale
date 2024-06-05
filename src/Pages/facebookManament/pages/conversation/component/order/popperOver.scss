@@ -1,0 +1,29 @@
+
+.facebook-order-popover__selected-action-menu-item {
+  margin-bottom: 16px;
+
+  :hover {
+    cursor: pointer;
+    color: rgb(229, 16, 29) !important;
+    .tooltipv2-text {
+      color: rgb(229, 16, 29) !important;
+    }
+  }
+
+  :last-child {
+    margin-bottom: 4px;
+  }
+
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fb-right-sight__popup .right-sight-popup__wrapper{
+  top: 0!important;
+}
+.fb-right-sight__popup .right-sight-popup__box--dismiss{
+  top: 0!important;
+}

@@ -1,0 +1,73 @@
+.btn-mini-game {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3.313rem;
+    height: 100px;
+    @media screen and (max-height: 770px){
+      margin-top: 1rem;
+      height: auto;
+    }
+    &__button {
+        width: 200px;
+        height: 44px !important;
+        backdrop-filter: blur(40px) !important;
+        border-radius: 60px !important;
+        font-weight: 600 !important;
+        font-size: 20px !important;
+        border: none !important;
+    }
+    &__button-group{
+      @media screen and (max-width: 1366px){
+        display: flex;
+      }
+    }
+    .btn--start {
+        background: linear-gradient(338.02deg, #0DA64F 22.27%, #DCFF00 119.14%) !important;
+        &[data-meta='true']{
+           background:  linear-gradient(344.66deg, #F6F6FB -24.08%, #B1B1DC 103.61%) !important;
+            color: #FFFFFF !important;
+          &:hover{
+            background: linear-gradient(344.66deg, #F6F6FB -24.08%, #B1B1DC 103.61%) !important;
+          }
+        }
+        &:hover{
+        background: linear-gradient(338.02deg, #1DC264 22.27%, #DCFF00 119.14%) !important;
+        }
+    }
+      
+      .btn--finish {
+        background: linear-gradient(151.33deg, #F00000 -2.76%, #FFAB5E 101.1%);
+        &[data-active='true']{
+          background:  linear-gradient(344.66deg, #F6F6FB -24.08%, #B1B1DC 103.61%) !important;
+          color: #FFFFFF !important;
+          &:hover{
+            background: linear-gradient(344.66deg, #F6F6FB -24.08%, #B1B1DC 103.61%) !important;
+          }
+        }
+        &:hover{
+          background:  linear-gradient(151.33deg, #FF4242 -2.76%, #FFAB5E 101.1%) !important;
+        }
+
+      }
+      
+      .btn:active {
+        background: linear-gradient(344.66deg, #F6F6FB -24.08%, #B1B1DC 103.61%);
+      }
+  .btn_result{
+    margin-top: 16px;
+    @media screen and (max-width: 1366px){
+      margin-top: 0;
+      margin-left: 16px;
+    }
+  }
+  .btn--result{
+    background: linear-gradient(338.02deg, #0DA64F 22.27%, #DCFF00 119.14%) !important;
+
+
+    &:hover{
+      background: linear-gradient(338.02deg, #1DC264 22.27%, #DCFF00 119.14%) !important;
+    }
+
+  }
+}

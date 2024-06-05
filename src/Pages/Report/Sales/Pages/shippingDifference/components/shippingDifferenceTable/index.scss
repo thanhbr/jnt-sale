@@ -1,0 +1,139 @@
+#content-wrap[data-expand=true] .shipping-fee-management-table-footer__overview {
+  width: calc(100% + 120px) !important;
+}
+.shipping-fee-management-table {
+
+  &__row {
+    &[data-active="true"] {
+      background: #f3f6fc;
+    }
+    border-bottom: none!important;
+    &:hover {
+      .tr__container {
+        background: #F7F9FD !important;
+      }
+    }
+  }
+
+
+  &__overview-cell{
+    width: 23%!important;
+    &:nth-child(4) {
+      border-right: 1px solid #E2EAF8;
+    }
+    &:nth-child(5) {
+      background: #F7F9FD !important;
+    }
+  }
+  &__cell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &[data-menu="true"] {
+      position: relative;
+    }
+
+    &[data-type="td"] {
+      padding-right: 24px;
+      display: block !important;
+      text-align: right;
+
+      p {
+        width: 100% !important;
+        overflow: hidden;
+      }
+
+      &:nth-child(2) {
+        text-align: left;
+      }
+    }
+
+    &[data-type="th"] {
+      padding: 16px 0;
+      padding-right: 24px;
+      background: #F7F9FD !important;
+      &[data-selected="true"] {
+        display: flex;
+        flex: 1;
+        align-items: center;
+      }
+
+      &:nth-child(1) {
+        padding-right: 16px;
+      }
+
+      &:nth-child(9) {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        span {
+          color: #00AB56 !important;
+          text-align: right;
+          width: auto !important;
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      padding-right: 16px;
+      padding-left: 16px;
+      width: 58px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      justify-content: flex-start;
+      flex: 1;
+      border-right: 1px solid #E2EAF8;
+    }
+
+    &:nth-child(3) {
+      width: 10%;
+    }
+
+    &:nth-child(4) {
+      width: 10%;
+    }
+
+    &:nth-child(5) {
+      width: 10%;
+      text-align: right;
+    }
+
+    &:nth-child(6) {
+      width: 10%;
+      text-align: right;
+    }
+
+    &:nth-child(7) {
+      width: 10%;
+      text-align: right;
+    }
+
+    &:nth-child(8) {
+      width: 10%;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      border-right: 1px solid #E2EAF8;
+    }
+
+    &:nth-child(9) {
+      background: #F7F9FD !important;
+      width: 12%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__tooltipV2 {
+    display: -webkit-box;
+    height: 100%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

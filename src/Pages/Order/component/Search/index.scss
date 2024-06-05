@@ -1,0 +1,28 @@
+@import "../../../../Component/mixin/index";
+.order-filter__search {
+  position: relative;
+  &-input {
+    width: 24.5rem;
+    padding: .4375rem .75rem;
+    border-radius: var(--border-radius-component);
+    border: 1px solid var(--background-border);
+    font-size: 14px;
+    line-height: 140%;
+    max-height: 2.125rem;
+    @include desktop_min{
+      padding-right: 3rem;
+    }
+
+    &::placeholder {
+      font-style: normal;
+      color: rgba(124, 136, 166, 1);
+    }
+  }
+  svg {
+    position: absolute;
+    right: .875rem;
+    top: .45rem;
+    //cursor: pointer;
+  }
+}
+

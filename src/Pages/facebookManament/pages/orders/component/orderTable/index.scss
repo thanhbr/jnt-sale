@@ -1,0 +1,237 @@
+.order-table-facebook {
+  &__loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__row {
+    &:hover {
+      .order-table-facebook__detail-toggle {
+        display: block;
+      }
+    }
+    .tr__container{
+      cursor: pointer;
+    }
+  }
+  &__header{
+    height: 44px;
+  }
+  &__cell {
+    &[data-menu='true'] {
+      position: relative;
+    }
+
+    &[data-type='td'] {
+      &:nth-child(5) {
+        justify-content: flex-start;
+      }
+
+      &:nth-child(6) {
+        justify-content: center;
+      }
+
+      &:nth-child(7) {
+        justify-content: flex-end;
+      }
+
+      &:nth-child(8) {
+        justify-content: center;
+      }
+    }
+
+    &[data-type='th'] {
+      &[data-selected='true'] {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        padding: 0 12px;
+      }
+    }
+
+    &:nth-child(1) {
+      width: 47px;
+      padding-left: 17px;
+    }
+
+    &:nth-child(2) {
+      width: 11.15%;
+
+      @media screen and (max-width: 1599px) {
+        width: 18%;
+      }
+    }
+
+    &:nth-child(3) {
+      flex: 1;
+    }
+
+    &:nth-child(4) {
+      width: 13.35%;
+    }
+
+    &:nth-child(5) {
+      width: 11.7%;
+      text-align: left;
+      @media screen and (max-width: 1366px){
+         width: 13.7%;
+      }
+    }
+
+    &:nth-child(6) {
+      width: 7.8%;
+
+      text-align: center;
+      @media screen and (max-width: 1599px) {
+        width: 8.8%;
+      }
+      @media screen and (max-width: 1366px) {
+        width: 9.8%;
+      }
+    }
+
+    &:nth-child(7) {
+      width: 8.35%;
+
+      text-align: right;
+    }
+
+    &:nth-child(8) {
+      width: 9.35%;
+
+      text-align: center;
+      @media screen and (max-width: 1599px) {
+        width: 11.35%;
+      }
+      @media screen and (max-width: 1366px) {
+        width: 12.35%;
+      }
+    }
+
+    &:nth-child(9) {
+      width: 68px;
+
+      justify-content: flex-end;
+
+      @media screen and (max-width: 1599px) {
+        width: 38px;
+      }
+    }
+  }
+  &__cell_payment{
+      padding-left:17px !important;
+  }
+  &__detail-toggle {
+    position: absolute;
+    top: 50%;
+    right: 42px;
+
+    width: 20px;
+    height: 20px !important;
+    display: none;
+
+    background: transparent;
+    border: none;
+    border-radius: 12px !important;
+
+    font-size: 12px !important;
+    line-height: 24px !important;
+
+    transform: translateY(-50%) rotate(180deg);
+
+    cursor: pointer;
+
+    &[data-active='true'] {
+      display: block !important;
+
+      transform: translateY(-50%) rotate(0deg);
+    }
+
+    @media screen and (max-width: 1599px) {
+      display: none !important;
+    }
+  }
+
+  &__selected-action-dropdown {
+    position: relative;
+
+    margin-left: 12px;
+  }
+
+  &__selected-action-toggle {
+    width: 88px;
+    padding: 0 !important;
+    background: #2BB8A9 !important;
+    border-radius: 14px !important;
+    border-color: #2BB8A9 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+  }
+
+  &__selected-action-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &__selected-action-menu {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    z-index: 12;
+
+    width: 150px;
+    padding: 8px;
+
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &__selected-action-menu-item {
+    padding: 8px;
+
+    color: #191d32;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+
+    transition: color 0.25s;
+
+    cursor: pointer;
+
+    &:hover {
+      color: #1e9a98;
+    }
+  }
+}
+
+.tab-detail-order {
+  &__link-hover {
+    color: #1A94FF;
+
+    &:hover {
+      color: #1373DB;
+    }
+  }
+}

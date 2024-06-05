@@ -1,0 +1,28 @@
+.product-group-table-header {
+   .tr__container{
+    height: 44px;
+   }
+    &-code {
+        width: 14.98rem;
+    }
+
+    &-name {
+        width: 14.98rem;
+    }
+
+    &-note {
+        width: 50.75rem;
+    }
+
+    &-status {
+        width: 15.98rem;
+        text-align: center;
+        span{
+            width: 100% !important;
+        }
+    }
+
+    &-setting {
+        width: 3rem;
+    }
+}

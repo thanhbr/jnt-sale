@@ -1,0 +1,427 @@
+import {ActionType} from './action'
+import {initial} from './initial'
+const reducer = (state, action) => {
+  switch (action.type) {
+    case ActionType.FORM_NAME_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            name: {
+              ...state.form.warehouseInfo.name,
+              value: action.payload?.value,
+            },
+          },
+        },
+      }
+
+    case ActionType.FORM_ISPURCHASE_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            isPurchase: {
+              ...state.form.warehouseInfo.isPurchase,
+              value: action.payload?.value,
+            },
+          },
+        },
+      }
+
+    case ActionType.FORM_ISMAIN_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            isMain: {
+              ...state.form.warehouseInfo.isMain,
+              value: action.payload?.value,
+            },
+          },
+        },
+      }
+
+    case ActionType.FORM_STATUS_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            status: {
+              ...state.form.warehouseInfo.status,
+              value: action.payload?.value,
+            },
+          },
+        },
+      }
+
+    case ActionType.FORM_ADDRESS_DISTRICT_KEYWORD_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            address: {
+              ...state.form.warehouseInfo.address,
+              district: {
+                ...state.form.warehouseInfo.address.district,
+                list: action.payload?.list,
+                keyword: action.payload?.keyword,
+              },
+            },
+          },
+        },
+      }
+
+    case ActionType.FORM_ADDRESS_DISTRICT_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            address: {
+              ...state.form.warehouseInfo.address,
+              district: {
+                ...state.form.warehouseInfo.address.district,
+                value: action.payload?.district?.value,
+              },
+              ward: {
+                ...state.form.warehouseInfo.address.ward,
+                keyword: '',
+                list: action.payload?.ward?.list,
+                value: null,
+              },
+            },
+          },
+        },
+      }
+
+    case ActionType.FORM_ADDRESS_PROVINCE_KEYWORD_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            address: {
+              ...state.form.warehouseInfo.address,
+              province: {
+                ...state.form.warehouseInfo.address.province,
+                list: action.payload?.list,
+                keyword: action.payload?.keyword,
+              },
+            },
+          },
+        },
+      }
+
+    case ActionType.FORM_ADDRESS_PROVINCE_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            address: {
+              ...state.form.warehouseInfo.address,
+              province: {
+                ...state.form.warehouseInfo.address.province,
+                value: action.payload?.province?.value,
+              },
+              district: {
+                ...state.form.warehouseInfo.address.district,
+                keyword: '',
+                list: action.payload?.district?.list,
+                value: null,
+              },
+              ward: {
+                ...state.form.warehouseInfo.address.ward,
+                keyword: '',
+                list: [],
+                value: null,
+              },
+            },
+          },
+        },
+      }
+
+    case ActionType.FORM_ADDRESS_WARD_KEYWORD_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            address: {
+              ...state.form.warehouseInfo.address,
+              ward: {
+                ...state.form.warehouseInfo.address.ward,
+                list: action.payload?.list,
+                keyword: action.payload?.keyword,
+              },
+            },
+          },
+        },
+      }
+
+    case ActionType.FORM_ADDRESS_WARD_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            address: {
+              ...state.form.warehouseInfo.address,
+              ward: {
+                ...state.form.warehouseInfo.address.ward,
+                value: action.payload?.ward?.value,
+              },
+            },
+          },
+        },
+      }
+
+    case ActionType.FORM_ADDRESS_UPDATE:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            address: {
+              ...state.form.warehouseInfo.address,
+              value: action.payload?.value,
+            },
+          },
+        },
+      }
+    case ActionType.UPDATE_FORM:
+      return {
+        ...state,
+        form: {
+          ...state.form,
+          warehouseInfo: {
+            ...state.form.warehouseInfo,
+            address: {
+              ...state.form.warehouseInfo.address,
+              value: action.payload?.warehouse_address,
+              origin: action.payload?.warehouse_address,
+              districtOrigin: action.payload?.findDistrict?.value,
+              provinceOrigin: action.payload?.findProvince?.value,
+              wardOrigin: action.payload?.findWard?.value,
+            },
+            name: {
+              ...state.form.warehouseInfo.name,
+              value: action.payload?.warehouse_name,
+              origin: action.payload?.warehouse_name,
+            },
+            status: {
+              ...state.form.warehouseInfo.status,
+              value: action.payload?.status === '1',
+              origin: action.payload?.status === '1',
+            },
+            isPurchase: {
+              ...state.form.warehouseInfo.isPurchase,
+              value: action.payload?.is_purchase === '1',
+              origin: action.payload?.is_purchase === '1',
+            },
+            isMain: {
+              ...state.form.warehouseInfo.isMain,
+              value: action.payload?.is_main === '1',
+              origin: action.payload?.is_main === '1',
+            },
+          },
+        },
+      }
+    case ActionType.RESET_FORM:
+      return {
+        ...state,
+        form: initial.form,
+      }
+
+    case ActionType.IS_LOADING:
+      return {
+        ...state,
+        isloading: action.payload,
+      }
+    case ActionType.SET_EDIT_ITEM_ID:
+      return {
+        ...state,
+        edit_item_id: action.payload,
+      }
+    case ActionType.SET_ERROR:
+      return {
+        ...state,
+        errors: action.payload,
+      }
+    case ActionType.OPEN_MODAL:
+      return {
+        ...state,
+        openModal: action.payload,
+      }
+    case ActionType.SET_LIST:
+      return {
+        ...state,
+        list: action.payload,
+      }
+    case ActionType.META:
+      return {
+        ...state,
+        meta: action.payload,
+      }
+    case ActionType.META_PER_PAGE:
+      return {
+        ...state,
+        meta: {...state.meta, per_page: action.payload},
+      }
+    case ActionType.META_START:
+      return {
+        ...state,
+        meta: {...state.meta, start: action.payload},
+      }
+    case ActionType.META_TOTAL:
+      return {
+        ...state,
+        meta: {...state.meta, total: action.payload},
+      }
+    case ActionType.EMPTY_TITLE:
+      return {
+        ...state,
+        emptyTitle: action.payload,
+      }
+    case ActionType.IS_CHECK_DEFAULT:
+      return {
+        ...state,
+        is_check_default: action.payload,
+      }
+    case ActionType.IS_SWITCH_ACTIVE:
+      return {
+        ...state,
+        is_switch_active: action.payload,
+      }
+    case ActionType.CONTENT:
+      return {
+        ...state,
+        content: action.payload,
+      }
+    case ActionType.POSITION:
+      return {
+        ...state,
+        position: action.payload,
+      }
+    case ActionType.IS_DEFAULT:
+      return {
+        ...state,
+        is_default: action.payload,
+      }
+    case ActionType.STATUS:
+      return {
+        ...state,
+        status: action.payload,
+      }
+    case ActionType.IS_CHECK_ALL:
+      return {
+        ...state,
+        isCheckAll: action.payload,
+      }
+    case ActionType.ID_CHECK:
+      return {
+        ...state,
+        idCheck: action.payload,
+      }
+    case ActionType.ERROR_UNIT:
+      return {
+        ...state,
+        valid_note: action.payload,
+      }
+    case ActionType.ERROR_POSITION:
+      return {
+        ...state,
+        valid_position: action.payload,
+      }
+    case ActionType.DISABLE_SAVE:
+      return {
+        ...state,
+        disable_save: action.payload,
+      }
+    case ActionType.IS_CHECK:
+      return {
+        ...state,
+        isCheck: action.payload,
+      }
+    case ActionType.COUNT:
+      return {
+        ...state,
+        count: action.payload,
+      }
+    case ActionType.LIST_DROP:
+      return {
+        ...state,
+        item_drop: action.payload,
+      }
+    case ActionType.IS_ACTIVE:
+      return {
+        ...state,
+        is_active: action.payload,
+      }
+    case ActionType.CHECK_SEARCH:
+      return {
+        ...state,
+        check_search: action.payload,
+      }
+    case ActionType.OPEN_CONFIRM:
+      return {
+        ...state,
+        openConfirm: action.payload,
+      }
+    case ActionType.CHECK_CONFIRM:
+      return {
+        ...state,
+        checkConfirm: action.payload,
+      }
+    case ActionType.SET_CONFIRM:
+      return {
+        ...state,
+        confirm: action.payload,
+      }
+    case ActionType.SET_MODAL_INFO:
+      return {
+        ...state,
+        modalInfo: action.payload,
+      }
+    case ActionType.CHECK_EMPTY:
+      return {
+        ...state,
+        checkEmpty: action.payload,
+      }
+    case ActionType.GET_PAGINATION:
+      return {
+        ...state,
+        pagination: {
+          ...state.pagination,
+          active: action.payload?.active,
+          amount: action.payload?.amount,
+          total: action.payload?.total,
+          totalItems: action.payload?.totalItems,
+        },
+      }
+    case ActionType.SET_VALUE_SEARCH:
+      return {
+        ...state,
+        valueSearch: action.payload,
+      }
+    default:
+      return state
+  }
+}
+export default reducer

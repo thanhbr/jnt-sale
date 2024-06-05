@@ -1,0 +1,132 @@
+.payment {
+  .payment-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paid {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #00081D;
+
+    margin-right: 12rem;
+
+    span {
+      margin-left: 0.5rem;
+      color: #00AB56;
+    }
+  }
+
+  .pay {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #00081D;
+
+    margin-right: 12rem;
+
+    span {
+      margin-left: 0.5rem;
+      color: #FF424E;
+    }
+  }
+
+  .payment-confirm {
+    width: 159px !important;
+    height: 32px !important;
+
+    background: rgb(229, 16, 29) !important;
+    border-radius: 6px !important;
+    border: unset !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 140% !important;
+    color: #FFFFFF !important;
+
+    padding: 0 !important;
+
+    &:hover {
+      background: rgba(30, 154, 152, 0.8) !important;
+    }
+  }
+
+  .payment_method_name {
+    border-left: 3px solid #00AB56;
+  }
+
+  .MuiAccordion-rounded {
+    &:first-child {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .MuiAccordionSummary-root {
+    display: inline-flex;
+
+    .Mui-expanded {
+      min-height: unset;
+    }
+  }
+
+  .MuiPaper-elevation1 {
+    box-shadow: unset;
+  }
+
+  .MuiAccordionSummary-content.Mui-expanded {
+    margin: 0.75rem 0 0.5rem;
+  }
+
+  .MuiAccordionDetails-root {
+    display: block;
+  }
+
+  .MuiIconButton-root {
+    padding: 0;
+  }
+
+  .p-payment-success {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #00081D;
+  }
+
+  .txt-payment {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #7C88A6;
+  }
+
+  .tab-payment {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.container-payment-form {
+  input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 12px;
+    background: #FFFFFF;
+    border: 1px solid #EBEEF5;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #00081D;
+
+  }
+}

@@ -1,0 +1,59 @@
+.table {
+    &__unit {
+        &-actionPopup {
+            width: 180px;
+            cursor: pointer;
+            background: #fff;
+            box-shadow: 1px 2px 8px rgb(34 62 98 / 15%);
+            border-radius: 4px;
+            position: absolute;
+            top: 10%;
+            right: 20px;
+            z-index: 1;
+            text-align: left;
+            padding: 1rem;
+            color: #00081D;
+
+            .drop-edit {
+                margin-bottom: 1rem;
+
+                p {
+                    margin-left: 12px;
+                }
+
+                &:hover {
+                    p {
+                        color: #E5101D;
+                    }
+
+                    svg path {
+                        stroke:#E5101D;
+                    }
+                }
+            }
+
+            .drop-delete {
+                display: flex;
+
+                p {
+                    margin-left: 12px;
+                }
+
+                &:hover {
+                    p {
+                        color: rgb(255, 66, 78);
+                    }
+
+                    svg path {
+                        stroke: #E5101D;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table_icon {
+    position: relative;
+    cursor: pointer;
+}

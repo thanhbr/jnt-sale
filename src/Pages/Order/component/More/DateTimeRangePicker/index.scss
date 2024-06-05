@@ -1,0 +1,39 @@
+@import "./rsuite-datetime.css";
+@import "../../../../../Component/mixin/index";
+.date-time-range-picker-custom {
+  position: relative;
+  max-height: 2.125rem;
+  .rs-picker-toggle-wrapper {
+    width: 100%;
+  }
+  .rs-picker-toggle.rs-btn-default {
+    padding-left: 6.4rem;
+    max-height: 2.125rem;
+    @include desktop_min{
+      padding: 0.4rem 2rem 0.4rem 7.7rem !important;
+    }
+
+    &:hover, &:active {
+      border: 1px solid var(--bg-pr-large-hover);
+    }
+
+    .rs-picker-toggle-value {
+      color: black;
+      padding-left: 1.625rem;
+      @include desktop_min{
+        padding-left: 0.2rem;
+      }
+    }
+    .rs-picker-toggle-placeholder {
+      padding-left: 2rem;
+    }
+    .rs-icon {
+      @include desktop_min{
+        margin-top: -.546875rem;
+      }
+    }
+    .rs-picker-toggle-caret.rs-icon {
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.empty__delivery_table {
+    width: 100%;;
+    height: 610px;
+    text-align: center;
+    padding: 0 !important;
+    .empty__delivery {
+        width: 100%;
+        height: 675px;
+        .tr__container{
+            width: 100%;
+            height: 675px;
+            display: block;
+            padding-top: 10rem;
+            background: #ffffff !important;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            color: #7C88A6;
+        }
+
+        &-create {
+            margin-top: 12px
+        }
+    }
+}

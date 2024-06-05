@@ -1,0 +1,27 @@
+.date-range-picker-custom {
+  position: absolute;
+  top: 0;
+  right: 13rem;
+  z-index: 2;
+  width: 100vw;
+  transition: all 1s;
+}
+
+.rdrDateRangePickerWrapper {
+  max-width: 24.5rem;
+  border-radius: var(--border-radius-component);
+  box-shadow: var(--box-shadow);
+}
+.rdrStaticRanges {
+  width: 7rem;
+}
+.rdrDateDisplayWrapper {
+  display: none;
+}
+
+.rs-calendar-month-view .rs-calendar-month-dropdown{
+  display: block;
+}
+.rs-calendar-month-dropdown.show{
+  display: block;
+}

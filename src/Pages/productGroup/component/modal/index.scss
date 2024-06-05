@@ -1,0 +1,40 @@
+@import "src/Component/mixin";
+.product-group-modal_confirm{
+    width : 480px;
+    height: 196px;
+    padding: 24px;
+    .product-group-modal_txt{
+        margin-top: 24px;
+    }
+    .product-group-modal_dismiss{
+        button{
+            width: 110px;
+            height: 32px;
+            padding: 0;
+            font-size:14px !important;
+        }
+    }
+}
+.product-group-modal_right-side{
+    .right-sight-popup__wrapper{
+        @media screen and (max-width: 1366px){
+            height: 85vh;
+        }
+    }
+}
+@include desktop_large_max{
+    .product-group-modal_confirm{
+        width : 480px;
+        height: 196px;
+        padding: 24px;
+        margin: 14rem auto 0 26rem;
+    }
+}
+@include  desktop_width_1280{
+    .product-group-modal_confirm{
+        width : 480px;
+        height: 196px;
+        padding: 24px;
+        margin: 14rem auto 0 28rem;
+    }
+}

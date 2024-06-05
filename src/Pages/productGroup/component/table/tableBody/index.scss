@@ -1,0 +1,46 @@
+.product-group-table-body {
+    &-code {
+        width: 14.98rem;
+    }
+    &_tooltip{
+        display: -webkit-box;
+        height: 100%;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &_tooltip-code{
+        height: 100%;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &_note-tooltip{
+        display: -webkit-box;
+        height: 100%;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &-name {
+        width: 14.98rem;
+    }
+
+    &-note {
+        width: 50.75rem;
+        flex: 1 ;
+
+    }
+
+    &-status {
+        width: 15.98rem;
+        justify-content: center;
+    }
+
+    &-setting {
+        width: 3rem;
+    }
+}

@@ -1,0 +1,33 @@
+.wrapper {
+    position: relative;
+    margin-left: 1.25rem;
+    
+    .store {
+        position: relative;
+        margin-right: 24px;
+        .name {
+            display: flex;
+            color: #161D25;
+            margin-right: 1.5rem;
+            svg {
+                margin: 5px 8px;
+            }
+          .fullname {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            height: 1.2em;
+            white-space: nowrap;
+            max-width: 12rem;
+          }
+        }
+        span:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 20px;
+            background: white;
+        }
+    }
+}

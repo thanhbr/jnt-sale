@@ -1,0 +1,99 @@
+.body-trans-status-wrapper {
+  height: 403px;
+
+  .custom-donut {
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    overflow: inherit!important;
+    * {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+    }
+    .img-empty{
+      margin-top: 1.5rem;
+    }
+    .header-donut {
+      padding: 1.5rem 1.5rem 0 1.5rem !important;
+    }
+
+    .apexcharts-legend {
+      display: flex;
+      width: 60%;
+      top: -69px !important;
+
+      @media only screen and (max-width: 1740px){
+        width: 65%;
+      }
+      @media only screen and (max-width: 1660px){
+        width: 70%;
+      }
+      
+      .apexcharts-legend-series {
+        width: calc(50%);
+        padding: 1.25rem 0.75rem;
+        margin: 0 !important;
+        border-bottom: 1px dashed #EBEEF5;
+
+        .container-shipping {
+          display: flex;
+
+          .img-content {
+            margin-right: 0.75rem;
+          }
+
+          .text-content {
+            p {
+              margin-bottom: 0.25rem;
+              margin-left: 0;
+            }
+
+            .label-status {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 140%;
+              color: #000000;
+              margin-left: 0;
+              margin-right: 0.5rem;
+            }
+
+            .label-order {
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 140%;
+              color: #000000;
+              span{
+                font-weight: 400;
+                font-size: 16px;
+              }
+            }
+
+            .label-price {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 150%;
+              color: #808089;
+            }
+
+          }
+        }
+      }
+
+      > :nth-child(2), > :nth-child(4), > :nth-child(6) {
+        padding-left: 1.5rem !important;
+        border-left: 1px dashed #EBEEF5;
+      }
+
+      > :nth-child(5), > :nth-child(6) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .arrow_box {
+    .img-tooltip {
+      margin-right: 0.5rem;
+    }
+  }
+}

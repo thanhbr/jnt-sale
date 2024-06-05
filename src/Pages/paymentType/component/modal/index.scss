@@ -1,0 +1,39 @@
+.payment-type-modal{
+  &_confirm{
+    width: 480px;
+    height: 204px;
+  }
+  &_confirm-status{
+    height: 184px;
+  }
+  &_group{
+    height: 92px;
+  }
+  &_txt{
+    margin-top: 24px;
+  }
+  &_dismiss{
+    .confirm-popup__save{
+      width: 110px;
+      height: 32px;
+      font-size: 14px;
+      padding:0;
+    }
+    .confirm-popup__dismiss{
+      width: 110px;
+      height: 32px;
+      font-size: 14px;
+      padding:0;
+    }
+  }
+  &_delete{
+    .confirm-popup__save{
+      background: #FF424E;
+      padding:0;
+      &:hover{
+        background: #FF7471;
+        border: none;
+      }
+    }
+  }
+}

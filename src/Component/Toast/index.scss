@@ -1,0 +1,25 @@
+.toast  {
+  &__type {
+    margin-right: .5rem;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--color-toast-title);
+  }
+}
+.Toastify__toast-container {
+  width: fit-content !important;
+}
+.Toastify__toast {
+  background: var(--bg-toast) !important;
+}
+.Toastify__close-button {
+  svg {
+    margin-top: .875rem;
+  }
+}
+.Toastify__progress-bar {
+  background-color: unset !important;
+}

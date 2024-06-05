@@ -1,0 +1,19 @@
+.order-tr-empty {
+  height: 50vh;
+  .container-empty{
+    text-align: center;
+    .text-empty{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      /* identical to box height, or 20px */
+
+      text-align: center;
+
+      color: #7C88A6;
+
+      margin: 1rem 0;
+    }
+
+  }
+}

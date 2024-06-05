@@ -1,0 +1,13 @@
+.p-404 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &__container {
+        display: inline-block;
+        margin: auto;
+        text-align: center  ;
+    }
+}

@@ -1,0 +1,21 @@
+.btn__main {
+    display: flex;
+    align-items: center;
+    &-reload {
+        width: 36px;
+        height: 36px;
+        background: #FFFFFF;
+        border: 1px solid #1E9A98;
+        border-radius: 6px;
+    }
+
+    &-create {
+        display: flex;
+        align-items: center;
+        margin-left: 12px
+    }
+    &-text{
+        margin-left: 8px;
+    }
+
+}

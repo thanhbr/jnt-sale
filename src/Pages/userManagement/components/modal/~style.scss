@@ -1,0 +1,32 @@
+.right-sight-popup {
+  &__group-role {
+    &--header {
+      position: relative;
+    }
+    &--error {
+      position: absolute;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba(242, 48, 97, 1);
+      top: 16px;
+    }
+    &--title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+    }
+    &--list {
+      cursor: pointer;
+      svg {
+        cursor: default;
+      }
+    }
+    &--text {
+      margin-left: 12px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}

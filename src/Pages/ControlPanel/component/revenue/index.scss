@@ -1,0 +1,141 @@
+body {
+  * {
+    font-family: 'SF Pro Display';
+  }
+}
+.custom-chart {
+  box-shadow: none !important;
+  border-radius: var(--border-radius)!important;
+  .chart-content {
+    padding: 0 24px;
+  }
+
+  .custom-header {
+    padding: 24px;
+  }
+}
+
+.MuiTypography-root {
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  color: #151624 !important;
+}
+
+.legend {
+  padding: 0 24px;
+}
+
+.header-chart-tab {
+  width: 25%;
+  border-radius: 6px 6px 0px 0px;
+  padding: 8px 0;
+  border-top: 4px solid #ffffff;
+
+  &.total {
+    &:hover{
+      border-top: 4px solid #FF0000;
+      cursor: pointer;
+    }
+    .total-order p {
+      color: #FF0000;
+    }
+  }
+
+  &.total.active {
+    background: linear-gradient(180deg, rgba(128, 128, 137, 0.12) -54.02%, rgba(255, 0, 0, 0.12) -54%, rgba(255, 0, 0, 0) 100%);
+    border-top: 4px solid #FF0000;
+
+    .content-chart-tab {
+      border-right: none;
+    }
+  }
+  &.pos:hover{
+    border-top: 4px solid #FFC116;
+    cursor: pointer;
+  }
+  &.pos.active {
+    background: linear-gradient(180deg, rgb(222 163 15 / 12%) -54.02%, rgba(0, 171, 86, 0) 100%);
+    border-top: 4px solid #FFC116;
+
+    .content-chart-tab {
+      border-right: none;
+    }
+  }
+
+  &.ecommerce:hover{
+    border-top: 4px solid #5245E5;
+    cursor: pointer;
+  }
+  &.ecommerce.active {
+    background: linear-gradient(180deg, rgb(51 10 194 / 12%) -54.02%, rgba(0, 171, 86, 0) 100%);
+    border-top: 4px solid #5245E5;
+
+    .content-chart-tab {}
+  }
+
+  &.delivery:hover{
+    border-top: 4px solid #00AB56;
+    cursor: pointer;
+  }
+  &.delivery.active {
+    background: linear-gradient(180deg, rgba(0, 171, 86, 0.12) -54.02%, rgba(0, 171, 86, 0) 100%);
+    border-top: 4px solid #00AB56;
+
+    .content-chart-tab {
+      border-right: none;
+    }
+  }
+
+  .content-chart-tab {
+    .align-item-center {
+      align-items: center;
+
+      svg:nth-child(1) {
+        margin-left: 17px;
+        margin-right: 9px;
+      }
+
+      p {
+        margin-right: 5px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #27272A;
+
+        @media screen and (max-width: 1366px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .total-order {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+      margin-left: 40px;
+      .text-order{
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+
+    .total-prices {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #808089;
+      margin-left: 40px;
+    }
+  }
+
+  &.ecommerce {
+    .content-chart-tab {
+      border-right: none;
+    }
+  }
+}

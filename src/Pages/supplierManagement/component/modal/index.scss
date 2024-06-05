@@ -1,0 +1,15 @@
+.supplier-management-footer{
+  .right-sight-popup__footer--btn-cancel{
+    @media screen and (max-width: 1280px) {
+        margin-top:0.6rem;
+    }
+  }
+  .right-sight-popup__footer--btn-save{
+    @media screen and (max-width: 1280px) {
+      margin-top:0.6rem;
+    }
+  }
+}
+.supplier-management-modal_confirm{
+  margin: 15rem auto 0 auto;
+}

@@ -1,0 +1,101 @@
+.content-warehouse {
+  .info-products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .text-info-pd {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #00081D;
+    margin-right: 0.2rem;
+  }
+
+  .default-repository {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #00081D;
+    margin-left: 0.2rem;
+  }
+
+  .total {
+    float: right;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+  }
+
+  .total-price {
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 0.5rem;
+  }
+
+  .txt-sale {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #00081D;
+  }
+
+  .MuiTableHead-root {
+    .MuiTableRow-head {
+      background: #F7F9FD;
+    }
+  }
+
+  .pd-name {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1A94FF;
+  }
+
+  .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+    box-shadow: unset !important;
+    border: 1px solid #E2EAF8;
+  }
+
+  .css-177gid-MuiTableCell-root {
+    border-bottom: 1px solid #E2EAF8;
+    border-radius: 4px;
+  }
+
+  .css-1ex1afd-MuiTableCell-root {
+    border-bottom: 1px solid #E2EAF8;
+    border-radius: 4px;
+  }
+
+  .css-1ygcj2i-MuiTableCell-root {
+    border-bottom: 1px solid #E2EAF8;
+  }
+
+  .css-1azl6jz-MuiTableCell-root {
+    border-bottom: 1px solid #E2EAF8;
+  }
+}
+
+.table-basic {
+  thead {
+    tr {
+      th {
+        padding: 0 1rem;
+      }
+    }
+  }
+}

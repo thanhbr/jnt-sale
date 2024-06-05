@@ -1,0 +1,46 @@
+.dropDown_main {
+    cursor: pointer;
+
+    .btn_dropdown {
+        margin-left: 12px;
+        width: 88px;
+        height: 28px;
+        background: #C40B27;
+        border-radius: 60px;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background: #FF000099;
+        }
+
+        svg {
+            margin-left: 5px;
+        }
+    }
+
+}
+
+.dropdown_menu {
+    .MuiPaper-elevation1 {
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    ul {
+        width: 201px !important;
+        height: 80px;
+        padding-top: 12px;
+        li {
+            font-size: 14px;
+            height: 20px;
+            margin-bottom: 16px;
+
+        }
+    }
+
+    .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+        top: 245px !important;
+
+    }
+}

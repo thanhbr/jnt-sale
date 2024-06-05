@@ -1,0 +1,127 @@
+.transfer-warehouse-management-table {
+
+  &__row {
+    &[data-active="true"] {
+      background: #f3f6fc;
+    }
+
+    &:hover {
+      .transfer-warehouse-management-table__detail-toggle {
+        display: block;
+      }
+    }
+  }
+
+  &__cell {
+
+    display: flex;
+    justify-content: flex-end;
+    &[data-menu="true"] {
+      position: relative;
+    }
+
+    &[data-type="td"] {
+      justify-content: flex-end;
+      &:nth-child(2) {
+        justify-content: center;
+      }
+    }
+
+    &[data-type="td"] {
+      &:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &[data-type="th"] {
+      padding: 3px 12px !important;
+
+      &[data-selected="true"] {
+        display: flex;
+        flex: 1;
+        align-items: center;
+      }
+    }
+
+    &:nth-child(1) {
+      display: block;
+      width: 44px;
+      text-align: center;
+    }
+
+    &:nth-child(2) {
+      display: block;
+      flex: 1;
+    }
+
+    &:nth-child(3) {
+      width: 12%;
+      display: flex;
+      text-align: left;
+      justify-content: flex-start;
+      p{
+        width: 100% !important;
+      }
+    }
+
+    &:nth-child(4) {
+      width: 14%;
+      text-align: left;
+      justify-content: flex-start;
+    }
+
+    &:nth-child(5) {
+      width: 14%;
+      text-align: left;
+      justify-content: flex-start;
+    }
+
+    &:nth-child(6) {
+      display: flex;
+      width: 6%;
+      text-align: left;
+      justify-content: flex-start;
+    }
+
+    &:nth-child(7) {
+      width: 8%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &:nth-child(8) {
+      width: 12%;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      justify-content: flex-end;
+      font-weight: 600;
+    }
+    &:nth-child(9) {
+      width: 12%;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      justify-content: flex-end;
+      font-weight: 600;
+    }
+  }
+
+
+  &__container-table {
+    width: 100%;
+  }
+
+  &__tooltipV2 {
+    display: -webkit-box;
+    height: 100%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+
+}

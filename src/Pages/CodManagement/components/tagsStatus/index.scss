@@ -1,0 +1,201 @@
+.tag-status-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  
+    .scroll-to-left, .scroll-to-right {
+      display: none;
+    }
+  
+    .d-tags-cod-status {
+      height: 100%;
+      max-height: 50px;
+      width: 100%;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      &__container {
+        height: 44px;
+        margin-left: 10px;
+        margin-bottom: 0;
+      }
+  
+      &__container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 17.5px;
+      }
+  
+      &__list {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 1rem;
+      }
+  
+      &__title-500 {
+        width: max-content;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 140%;
+        color: #56697C;
+        margin: 0 0.3rem 0 0.4rem;
+        cursor: pointer;
+  
+        &:hover {
+          color: #E5101D;
+        }
+      }
+  
+      &__title-600 {
+        width: max-content;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 140%;
+        color: #56697C;
+        margin-right: 0.25rem;
+  
+        cursor: pointer;
+  
+        &:hover {
+          color: #E5101D;
+        }
+      }
+  
+      &__drop-title-500 {
+        width: max-content;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: #56697C;
+        margin: 0 0.3rem 0 0.4rem;
+        cursor: pointer;
+  
+        &:hover {
+          color: #E5101D;
+        }
+      }
+  
+      &__name-green {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 140%;
+        color: #E5101D;
+      }
+  
+      &__option-total {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 140%;
+        color: #7c88a6;
+        cursor: pointer;
+      }
+  
+      &__box-gray {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        height: 24px;
+  
+        background: linear-gradient(0deg,
+            rgba(235, 240, 250, 0.98),
+            rgba(235, 240, 250, 0.98)),
+          #56697C;
+        border-radius: 4px;
+  
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        color: #56697C;
+  
+        padding: 3px 6px;
+      }
+  
+      &__box-green {
+        height: 24px;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        background: #E5101D;
+        border-radius: 4px;
+  
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        color: #ffffff;
+  
+        padding: 3px 6px;
+      }
+  
+      &__icon-arr {
+        display: flex;
+        margin-right: 0.25rem;
+        cursor: pointer;
+  
+        &[data-active='true'] {
+          transform: rotate(0);
+  
+          display: block !important;
+        }
+  
+        &[data-active='true'] {
+          transform: rotate(180deg);
+  
+          display: block !important;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1440px) {
+    .tag-status-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+  
+      .d-tags-cod-status {
+        // width: calc(100% - 48px);
+        width: 100%;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        &__container {
+          height: 44px;
+          margin-left: 10px;
+          margin-bottom: 0;
+        }
+      }
+  
+      .scroll-to-left,
+      .scroll-to-right {
+        background-color: #fff;
+        position: absolute;
+        z-index: 99;
+        width: 24px;
+        height: 44px;
+  
+        background: #E6ECF6;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  
+        .img-wrapper {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+  
+      .scroll-to-left {
+        left: 0;
+        border-radius: 4px 0 0 4px;
+      }
+  
+      .scroll-to-right {
+        right: 0;
+        border-radius: 0px 4px 4px 0px;
+      }
+    }
+  }

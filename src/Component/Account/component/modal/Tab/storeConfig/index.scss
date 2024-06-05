@@ -1,0 +1,17 @@
+.store-config{
+  &-modal_confirm{
+    width: 480px !important;
+    height: 196px !important;
+    padding: 24px !important;
+  }
+  &-modal_txt{
+    margin-top:24px;
+    margin-bottom: 32px;
+  }
+  &-modal_dismiss{
+    button{
+      width: 110px !important;
+      font-size: 14px !important;
+    }
+  }
+}

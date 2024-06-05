@@ -1,0 +1,41 @@
+.supplier-management{
+    &-modal_confirm{
+      width: 480px;
+      height: auto !important;
+      padding: 24px !important;
+    }
+    &-modal_txt{
+      margin-top:24px;
+      margin-bottom: 32px;
+    }
+  &-modal_dismiss{
+    button{
+      width: 110px !important;
+      font-size: 14px !important;
+    }
+  }
+}
+.supplier-management-delete{
+  &-modal_confirm{
+    width: 480px;
+    height: auto !important;
+    padding: 24px !important;
+  }
+  &-modal_txt{
+    margin-top:24px;
+    margin-bottom: 32px;
+  }
+  &-modal_dismiss{
+    button{
+      width: 110px !important;
+      font-size: 14px !important;
+      &:nth-child(2){
+        background: #FF424E !important;
+        &:hover{
+          background: #FF7471 !important;
+          border: none !important;
+        }
+      }
+    }
+  }
+}
